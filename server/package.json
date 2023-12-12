@@ -11,13 +11,18 @@
   "license": "ISC",
   "dependencies": {
     "@fastify/cors": "^8.4.0",
-    "@prisma/client": "^5.3.1",
+    "@prisma/client": "^5.7.0",
     "cors": "^2.8.5",
     "fastify": "^4.23.2"
   },
   "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^10.6.1",
     "prisma": "^5.3.1",
+    "prisma-erd-generator": "^1.11.2",
     "tsx": "^3.13.0",
     "typescript": "^5.2.2"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   }
 }
