@@ -28,7 +28,7 @@ export function SumaryTable() {
 
             <div className="grid grid-rows-7 grid-flow-col gap-3">
                 {sumaryDates.map(date => {
-                    return <HabitDay key={date.toString()} />
+                    return <HabitDay amount={5} completed={4} key={date.toString()} />
                 })}
 
                 {amountOfDaysToFill > 0 && Array.from({ length: amountOfDaysToFill }).map((_, i) => {
