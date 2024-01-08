@@ -30,8 +30,8 @@ export function Home() {
             </View>
 
             <ScrollView
-            showsVerticalScrollIndicator={false}
-            contentContainerStyle={{ paddingBottom: 100 }}
+                showsVerticalScrollIndicator={false}
+                contentContainerStyle={{ paddingBottom: 100 }}
             >
                 <View className="flex-row flex-wrap">
                     {
@@ -47,6 +47,7 @@ export function Home() {
                             .from({ length: amountofDaysToFill })
                             .map((_, index) => (
                                 <View
+                                    key={index}
                                     className="bg-zinc-900 rounded-lg border-2 m-1 border-zinc-800 opacity-40"
                                     style={{ width: DAY_SIZE, height: DAY_SIZE }}
                                 />
